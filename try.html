@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>HOPE</title>
+        <link rel="stylesheet" href="statics/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>
+    <body>
+      <video autoplay muted loop id="myVideo" src="bgvideo.mp4"></video>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">   
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <div class="logo">
+                <a class="navbar-brand" href="#myPage"><img src="images/logo.png"></a></div>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">Who We Are</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Let's Fly</a></li>
+                <li><a href="#">Bodh</a></li>
+                <li><a href="#">Ray of Hope</a></li>
+              </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">CHAPTERS
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li> <a href="#">Mumbai</a></li>
+                <li><a href="#">Jaipur</a></li>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Bhopal</a></li>
+                <li><a href="#">Indore</a></li>
+                <li><a href="#">Kolkata</a></li>
+                <li><a href="#">Chandigarh</a></li>
+                <li><a href="#">Hyderabad</a></li>
+                </ul>
+                </li>
+                <li><a href="#home">Support Us</a></li>
+                    <li><a href="#home">Contact</a></li>
+                        <li><a href="#home">Blog</a></li>
+                
+                  <li id="rr"><a href="#">DONATE</a></li>
+                
+              <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+          </div>
+        </div>
+        </div>
+    </nav> 
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </div>
+
+    
+    <button class="open-button" onclick="openForm()">Let's Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Let's Chat!</h1>
+
+        <label for="msg"><b>Ask as any question.</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+    <div class="center">
+      <p>HAPPY CHILDREN;<br>HAPPY NATION</p>  
+    </div>
+
+<center>
+    <div id="example1" style="background-image: url('images/support.png');">
+      <h1 style="color: #0F4C81 ; font-weight: 1000;">Digital Hope</h1>
+      <p>In COVID-19 response, HOPE has developed K-12 videos of Science and Mathematics in 2 languages Hindi and English because “learning should not stop during pandemics” The program is open-source for any other organisation or any student that wishes to use it. </p>
+      <br><button id="support">SUPPORT US</button>
+    </div>
+  </center>
+    
+
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    </body>
+</html>
+
